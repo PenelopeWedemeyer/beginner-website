@@ -4,7 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },
-  { path: "home", component: HomeComponent }
+  { path: "home", component: HomeComponent },
+  { path: "about", loadChildren: () => import("./components/about/about.module").then(m => m.AboutModule) }
 ];
 
 @NgModule({
