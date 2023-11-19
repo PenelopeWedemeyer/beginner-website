@@ -1,0 +1,35 @@
+<Div class="panelWrapper">
+    <p>a;sdlkfjasl;dkfjsa;dklfj</p>
+    <img class="panelImg" src="https://images.unsplash.com/photo-1542587227-8802646daa56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHNjaG9vbCUyMHN1cHBsaWVzfGVufDB8MHwwfHx8Mg%3D%3D">
+
+</Div>
+
+<ngb-carousel class="carouselWrapper">
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="carouselImg" [src]="productList[0].imageURL" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>{{productList[0].itemName}}</h3>
+            <p>{{productList[0].description}}</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="carouselImg" [src]="productList[1].imageURL" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>{{productList[1].itemName}}</h3>
+            <p>{{productList[1].description}}</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="carouselImg" [src]="productList[2].imageURL" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+            <h3>{{productList[2].itemName}}</h3>
+            <p>{{productList[2].description}}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>

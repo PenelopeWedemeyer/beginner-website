@@ -1,0 +1,19 @@
+.panelWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F3A361;
+}
+
+.panelImg {
+    width: 100%;
+}
+
+.carouselWrapper {
+    margin: 5% auto;
+    width: 75%;
+}
+
+.carouselImg {
+    height: 700px;
+    width: 100%;
+}
