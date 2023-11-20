@@ -6,7 +6,9 @@ const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "about", loadChildren: () => import("./components/about/about.module").then(m => m.AboutModule) },
-  { path: "products", loadChildren: () => import("./components/products/products.module").then(m => m.ProductsModule) }
+  { path: "products", loadChildren: () => import("./components/products/products.module").then(m => m.ProductsModule) },
+  { path: "products/details", loadChildren: () => import("./components/product-detail/product-detail.module").then(m => m.ProductDetailModule) },
+  { path: "**", component: HomeComponent }
 ];
 
 @NgModule({
