@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" [(ngModel)]="currentProduct.itemName">
+
+    <label for="quantity">Quantity</label>
+    <input type="text" id="quantity" name="quantity" [(ngModel)]="currentProduct.quantity">
+
+    <label for="price">Price</label>
+    <input type="text" id="price" name="price" [(ngModel)]="currentProduct.price">
+
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description" [(ngModel)]="currentProduct.description">
+
+    <label for="imgURL">ImageURL</label>
+    <input type="text" id="imgURL" name="imgURL" [(ngModel)]="currentProduct.imageURL">
+
+    <button type="submit">Submit!</button>
+</form>

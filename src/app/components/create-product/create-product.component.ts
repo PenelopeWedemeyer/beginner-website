@@ -21,6 +21,7 @@ export class CreateProductComponent implements OnInit {
   onSubmit() 
   {
     this.myProductService.createNewProduct(this.currentProduct).subscribe(response => {
+      console.log(response)
       this.router.navigateByUrl("/products");
     })
   }

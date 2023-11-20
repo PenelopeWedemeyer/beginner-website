@@ -3,6 +3,7 @@
 <div *ngFor="let p of productList">
     <p>{{p.itemName}}</p>
     <button [routerLink]="['/details', p.id]">View</button>
+    <button [routerLink]="['/edit', p.id]">Edit</button>
 </div>
 
 
