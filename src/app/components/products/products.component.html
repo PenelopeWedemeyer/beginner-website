@@ -1,3 +1,7 @@
 <p>products works!</p>
 
-<button routerLink="details">View</button>
+<div *ngFor="let p of productList">
+    <p>{{p.itemName}}</p>
+    <button [routerLink]="['/details', p.id]">View</button>
+</div>
+

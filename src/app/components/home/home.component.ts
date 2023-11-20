@@ -11,10 +11,10 @@ export class HomeComponent implements OnInit {
 
   productList: Product[] = [];
 
-  constructor (private myService: ProductService) {}
+  constructor (private myProductService: ProductService) {}
 
   ngOnInit(): void {
-    this.myService.getAllProducts().subscribe(response => {
+    this.myProductService.getAllProducts().subscribe(response => {
       this.productList = response;
     })
   }
