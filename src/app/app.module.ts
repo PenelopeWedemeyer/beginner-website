@@ -14,14 +14,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CreateProductComponent } from './components/create-product/create-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
     HomeComponent,
-    CreateProductComponent,
   ],
   imports: [
     BrowserModule,
