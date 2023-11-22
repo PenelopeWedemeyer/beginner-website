@@ -1,0 +1,21 @@
+.productWrapper {
+    display: flex;
+    margin: 5%;
+    width: 70%;
+    /* justify-content: center; */
+    column-gap: 5%;
+}
+
+.productInfo {
+    border: .5px solid black;
+    padding: 2%;
+}
+
+button {
+    margin: 2% 3% 0 0;
+}
+
+img {
+    box-shadow: 5px 5px 10px 5px;
+    border-radius: 20px;
+}

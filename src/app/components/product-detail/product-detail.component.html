@@ -1,1 +1,29 @@
-<p>{{currentProduct.itemName}}</p>
+<div class="productWrapper">
+    <div>
+        <img [src]="currentProduct.imageURL" alt="Image of a Product" width="600px" height="400px">
+    </div>
+
+    <div>
+        <h1><b>{{currentProduct.itemName}}</b></h1>
+
+        <div class="productInfo">
+            <p><b>Description:</b> {{currentProduct.description}}</p>
+
+            <p><b>Price:</b> {{currentProduct.price}}</p>
+
+            <p><b>Quantity:</b> {{currentProduct.quantity}}</p>
+        </div>
+
+        <button mat-stroked-button routerLink="/products">Back</button>
+
+        <button mat-stroked-button [routerLink]="['/edit', currentProduct.id]">Edit</button>
+
+        <button mat-stroked-button>Delete</button>
+
+
+    </div>
+
+</div>
+
+
+

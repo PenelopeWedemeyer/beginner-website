@@ -5,7 +5,7 @@
       "itemName": "Colored Pencils",
       "imageURL": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sb3JlZCUyMHBlbmNpbHN8ZW58MHwwfDB8fHwy",
       "price": "8",
-      "description": "a;sdklfjaskld;f;a;kasdfj",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae. Turpis egestas integer eget aliquet nibh praesent tristique magna. Congue mauris rhoncus aenean vel. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis.",
       "quantity": "1 pack of 16"
     },
     {
@@ -13,7 +13,7 @@
       "itemName": "Sticky Notes",
       "imageURL": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHN0YWNrJTIwb2YlMjBwYXBlcnxlbnwwfHwwfHx8MA%3D%3D",
       "price": 5,
-      "description": "a;sdklfjaskld;f;a;kasdfj",
+      "description": "Posuere morbi leo urna molestie at elementum. Ut placerat orci nulla pellentesque dignissim enim. Laoreet id donec ultrices tincidunt arcu. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. A arcu cursus vitae congue mauris rhoncus aenean vel.",
       "quantity": "3 packs of 100"
     },
     {
@@ -21,7 +21,7 @@
       "itemName": "Backpack",
       "imageURL": "https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": 40,
-      "description": "a;sdkasdfasdflfjaskld;f;a;kasdfj",
+      "description": "Metus dictum at tempor commodo ullamcorper. Eget arcu dictum varius duis at consectetur. Suspendisse potenti nullam ac tortor vitae. Adipiscing elit ut aliquam purus sit amet luctus.",
       "quantity": "1"
     }
   ]
