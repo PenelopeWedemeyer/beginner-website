@@ -1,0 +1,12 @@
+.matForm {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    row-gap: 25px;
+    width: 50%;
+}
+
+.btns {
+    display: flex;
+    column-gap: 20px;
+}

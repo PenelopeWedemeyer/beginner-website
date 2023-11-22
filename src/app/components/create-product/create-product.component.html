@@ -1,18 +1,33 @@
-<form (ngSubmit)="onSubmit()">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" [(ngModel)]="currentProduct.itemName">
+<form class="matForm" (ngSubmit)="onSubmit()">
+    <h1><b>Create New Product</b></h1>
 
-    <label for="quantity">Quantity</label>
-    <input type="text" id="quantity" name="quantity" [(ngModel)]="currentProduct.quantity">
+    <mat-form-field>
+        <mat-label for="name">Name</mat-label>
+        <input matInput type="text" id="name" name="name" [(ngModel)]="currentProduct.itemName">
+    </mat-form-field>
 
-    <label for="price">Price</label>
-    <input type="text" id="price" name="price" [(ngModel)]="currentProduct.price">
+    <mat-form-field>
+        <mat-label for="quantity">Quantity</mat-label>
+        <input matInput type="text" id="quantity" name="quantity" [(ngModel)]="currentProduct.quantity">
+    </mat-form-field>
 
-    <label for="description">Description</label>
-    <input type="text" id="description" name="description" [(ngModel)]="currentProduct.description">
+    <mat-form-field>
+        <mat-label for="price">Price</mat-label>
+        <input matInput type="text" id="price" name="price" [(ngModel)]="currentProduct.price">
+    </mat-form-field>
 
-    <label for="imgURL">ImageURL</label>
-    <input type="text" id="imgURL" name="imgURL" [(ngModel)]="currentProduct.imageURL">
+    <mat-form-field>
+        <mat-label for="description">Description</mat-label>
+        <textarea matInput type="text" id="description" name="description" [(ngModel)]="currentProduct.description"></textarea>
+    </mat-form-field>
 
-    <button type="submit">Submit!</button>
+    <mat-form-field>
+        <mat-label for="imgURL">ImageURL</mat-label>
+        <input matInput type="text" id="imgURL" name="imgURL" [(ngModel)]="currentProduct.imageURL">
+    </mat-form-field>
+
+    <div class="btns">
+        <button mat-stroked-button routerLink="/products">Back</button>
+        <button mat-stroked-button type="submit">Submit!</button>
+    </div>
 </form>
