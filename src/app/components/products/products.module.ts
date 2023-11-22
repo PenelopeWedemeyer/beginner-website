@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import { ProductsRoutingModule } from './products-routing.module';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -13,7 +14,8 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class ProductsModule { }
