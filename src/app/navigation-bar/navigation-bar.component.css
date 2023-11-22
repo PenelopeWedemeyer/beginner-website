@@ -15,3 +15,16 @@
   top: 0;
   z-index: 1;
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+  
+  padding: 1.5%;
+  background-color: #F3A361;
+  color: white;
+}

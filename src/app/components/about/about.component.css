@@ -1,0 +1,16 @@
+.everythingWrapper {
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 4%; */
+    margin: 3% 5%;
+}
+
+.informationWrapper {
+    margin: 5%;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px;
+    
+}
