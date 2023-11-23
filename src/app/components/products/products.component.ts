@@ -14,8 +14,21 @@ export class ProductsComponent implements OnInit {
   constructor(private myProductService: ProductService) {}
 
   ngOnInit(): void {
+      this.loadProducts();
+  }
+
+  loadProducts()
+  {
     this.myProductService.getAllProducts().subscribe(response => {
       this.productList = response;
+    })
+  }
+
+  onDelete(id: number)
+  {
+    this.myProductService.deleteProductByID(id).subscribe(response => {
+      console.log(response)
+      this.loadProducts();
     })
   }
 

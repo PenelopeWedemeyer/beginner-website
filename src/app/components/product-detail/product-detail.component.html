@@ -18,7 +18,7 @@
 
         <button mat-stroked-button [routerLink]="['/edit', currentProduct.id]">Edit</button>
 
-        <button mat-stroked-button>Delete</button>
+        <button mat-stroked-button (click)="onDelete(currentProduct.id)">Delete</button>
 
 
     </div>

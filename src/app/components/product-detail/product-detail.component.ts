@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -14,7 +14,7 @@ export class ProductDetailComponent implements OnInit{
 
   currentProduct: Product = new Product();
 
-  constructor(private myProductService: ProductService, private actRouter: ActivatedRoute) {}
+  constructor(private myProductService: ProductService, private actRouter: ActivatedRoute, private route: Router) {}
 
   ngOnInit(): void {
     const routeID = this.actRouter.snapshot.paramMap.get("id") ?? "";
@@ -22,6 +22,14 @@ export class ProductDetailComponent implements OnInit{
 
     this.myProductService.getProductByID(this.id).subscribe(response => {
       this.currentProduct = response;
+    })
+  }
+
+  onDelete(id: number) 
+  {
+    this.myProductService.deleteProductByID(id).subscribe(r => {
+      console.log(r);
+      this.route.navigateByUrl("/products")
     })
   }
 

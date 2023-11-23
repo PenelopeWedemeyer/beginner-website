@@ -15,7 +15,7 @@
         <mat-card-actions class="cardActions">
             <button mat-raised-button [routerLink]="['/details', p.id]">View</button>
             <button mat-stroked-button [routerLink]="['/edit', p.id]">Edit</button>
-            <button  mat-flat-button>Delete</button>
+            <button  mat-flat-button (click)="onDelete(p.id)">Delete</button>
         </mat-card-actions>
       </mat-card>
 </div>
