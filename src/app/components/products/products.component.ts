@@ -11,6 +11,8 @@ export class ProductsComponent implements OnInit {
 
   productList: Product[] = [];
 
+  searchedProduct: string = "";
+
   constructor(private myProductService: ProductService) {}
 
   ngOnInit(): void {
@@ -29,6 +31,13 @@ export class ProductsComponent implements OnInit {
     this.myProductService.deleteProductByID(id).subscribe(response => {
       console.log(response)
       this.loadProducts();
+    })
+  }
+
+  onSubmit()
+  {
+    this.myProductService.getProductBySearch(this.searchedProduct).subscribe(foundProduct => {
+      this.productList = foundProduct;
     })
   }
 

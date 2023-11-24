@@ -22,6 +22,11 @@ export class ProductService {
     return this.http.get<Product>(`${this.dataSource}/${id}`);
   }
 
+  getProductBySearch(value: string): Observable<Product[]>
+  {
+    return this.http.get<Product[]>(`${this.dataSource}?q=${value}`)
+  }
+
   createNewProduct(newProduct: Product): Observable<Product> 
   {
     return this.http.post<Product>(this.dataSource, newProduct);
