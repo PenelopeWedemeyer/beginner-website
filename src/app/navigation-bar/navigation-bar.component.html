@@ -3,14 +3,16 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      <img src="\assets\School Supplies-logos_black.2.png" alt="logo" width="100%">
+    </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/home">Home</a>
       <a mat-list-item routerLink="/about">About</a>
       <a mat-list-item routerLink="/products">Plants</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class="content">
     <!-- <mat-toolbar color="primary">
       <button
         type="button"
@@ -22,12 +24,13 @@
       </button>
       <span>NG-final-project</span>
     </mat-toolbar> -->
+
+    <router-outlet></router-outlet>
+    
+    <footer>
+      <p>©School Supplies, Inc.</p>
+      <p>Website created by Penelope Wedemeyer</p>
+    </footer>
       
-      <router-outlet></router-outlet>
-      
-      <!-- <footer>
-        <p>©School Supplies, Inc.</p>
-        <p>Website created by Penelope Wedemeyer</p>
-      </footer> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

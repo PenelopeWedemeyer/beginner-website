@@ -1,9 +1,11 @@
-<div class="wrap">
-    <Div class="panelWrapper">
-        <p>a;sdlkfjasl;dkfjsa;dklfj</p>
-        <img class="panelImg" src="https://images.unsplash.com/photo-1542587227-8802646daa56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHNjaG9vbCUyMHN1cHBsaWVzfGVufDB8MHwwfHx8Mg%3D%3D">
-    </Div>
-    
+<Div class="panelWrapper">
+    <div>
+        <img class="panelImg2" src="\assets\School Supplies-logos_black.2.png" alt="logo" height="200" width="900">
+        <p>Every kid needs school supplies to have a fun and successful education!</p>
+    </div>
+</Div>
+
+<div class="mainCarouselWrap">
     <ngb-carousel class="carouselWrapper">
         <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
@@ -11,7 +13,6 @@
             </div>
             <div class="carousel-caption">
                 <h3>{{productList[0].itemName}}</h3>
-                <p>{{productList[0].description}}</p>
             </div>
         </ng-template>
         <ng-template ngbSlide>
@@ -20,7 +21,6 @@
             </div>
             <div class="carousel-caption">
                 <h3>{{productList[1].itemName}}</h3>
-                <p>{{productList[1].description}}</p>
             </div>
         </ng-template>
         <ng-template ngbSlide>
@@ -29,8 +29,9 @@
             </div>
             <div class="carousel-caption">
                 <h3>{{productList[2].itemName}}</h3>
-                <p>{{productList[2].description}}</p>
             </div>
         </ng-template>
     </ngb-carousel>
 </div>
+
+

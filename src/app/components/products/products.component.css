@@ -16,10 +16,12 @@
   grid-template-columns: repeat(3, 1fr);
   row-gap: 10%;
   margin-left: 5%;
+  margin-bottom: 19.5%;
 }
 
 .example-card {
-    max-width: 400px;
+    max-width: 375px;
+    background-color: #d6c4b5;
   }
   
   .example-header-image {
@@ -30,9 +32,15 @@
   .cardConent {
     display: flex;
     justify-content: space-around;
+    padding-top: 20px;
   }
 
   .cardActions {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 20px;
   }
+
+img {
+  border: 3px solid #d6c4b5;
+}

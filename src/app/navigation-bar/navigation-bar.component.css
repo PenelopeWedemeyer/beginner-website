@@ -4,6 +4,7 @@
 
 .sidenav {
   width: 200px;
+  background-color: #d6c4b5;
 }
 
 .sidenav .mat-toolbar {
@@ -16,15 +17,20 @@
   z-index: 1;
 }
 
+.content {
+  background-color: #EEE1D7;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
-  /* position: fixed;
+
+  position: relative;
   left: 0;
   bottom: 0;
-  width: 100%; */
+  width: 100%;
   
   padding: 1.5%;
-  background-color: #F3A361;
+  background-color: #C1AFA1;
   color: white;
 }

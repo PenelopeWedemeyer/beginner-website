@@ -1,24 +1,27 @@
-.wrap{
-    background-color: #FFCEA6;
-}
-
 .panelWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #F3A361;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #C1AFA1;
+    height: 50%;
 }
 
-.panelImg {
-    width: 100%;
+.mainCarouselWrap {
+    padding: 5%;
 }
 
 .carouselWrapper {
-    /* margin: 5% auto; */
     margin: auto;
     width: 75%;
+    border: 2px solid #C1AFA1;
 }
 
 .carouselImg {
     height: 700px;
     width: 100%;
+}
+
+.carousel-caption {
+    color: rgb(255, 255, 255);
 }
