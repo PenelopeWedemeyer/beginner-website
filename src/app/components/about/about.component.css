@@ -1,9 +1,7 @@
 .everythingWrapper {
     display: flex;
     flex-direction: row;
-    /* column-gap: 4%; */
-    margin: 3% 6%;  
-    /* was a 5 in second percentage */
+    margin: 3% 6%;
 }
 
 .informationWrapper {

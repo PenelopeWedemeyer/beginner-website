@@ -31,9 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    //Angular Bootstrap
     NgbModule
-    //
   ],
   providers: [],
   bootstrap: [AppComponent]

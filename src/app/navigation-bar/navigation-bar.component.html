@@ -13,24 +13,11 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
-    <!-- <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span>NG-final-project</span>
-    </mat-toolbar> -->
-
     <router-outlet></router-outlet>
     
     <footer>
       <p>©School Supplies, Inc.</p>
       <p>Website created by Penelope Wedemeyer</p>
     </footer>
-      
   </mat-sidenav-content>
 </mat-sidenav-container>
