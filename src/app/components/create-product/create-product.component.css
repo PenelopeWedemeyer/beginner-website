@@ -1,7 +1,7 @@
 .matForm {
     display: flex;
     flex-direction: column;
-    margin: 3% auto 10.6%;
+    margin: 3% 3% 10.6%;
     row-gap: 25px;
     width: 50%;
 }
